@@ -2,15 +2,24 @@
 	margin: 0;
 	padding: 0;
 }
+@media (max-width:767px){
+  h1{
+  	font-size: 1em;
+  }
+}
+@media (max-width:767px){
+  img{
+  	font-size: 1em;
+  }
+}
 html{
 	font-family: "Roboto", sans-serif;
 	scroll-behavior: smooth;
 }
-.header{
+.menu ul{
+	align-items: center;
+	justify-content: center;
 	display: flex;
-	justify-content: space-around;
-	align-content: center;
-
 }
 .logo img{
 	border-radius: 50%;
@@ -28,7 +37,7 @@ html{
 }
 .menu ul li{
       
-    list-style: none  ;
+    list-style: none;
 }
 .menu ul li a{
     text-decoration: none;
@@ -61,13 +70,14 @@ html{
 	font-size:1em;
 	margin-bottom: 30px;
 }
-.hero-btn a{
+.hero-btn button {
   border: 1px solid #fff;
   border-radius: 20%;
  background-color: #635dda;
  color: #fff;
  padding: 15px 20px 15px 20px;
  text-decoration: none;
+ cursor: pointer;
 }
 /*hero end*/
 /*survices*/
@@ -89,12 +99,22 @@ html{
        padding: 5px;
        border-radius: 10px;
        background-color: #ddd;
+       position: relative;      
+}
+.item{
+	
+	border-radius: 10px;
+}
+.item:hover {
+	border-radius: 10px;
+box-shadow: 0 0 1px blue,0 0 15px blue,0 0 30px skyblue,0 0 60px skyblue,0 0 100px skyblue;	
 }
 .survices-pic{
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 justify-content: space-evenly;
 margin-bottom: 30px;
+
 }
 .item h3{
      text-align: center;
@@ -112,7 +132,7 @@ margin-bottom: 30px;
 	width: 300px;
 	margin-top: 30px;
 }
-.pro ul {
+.pro ul{
 	list-style: none;
 }
 .pro-2{
@@ -137,7 +157,9 @@ margin-bottom: 30px;
 .about div{
  flex: 1
 }
-
+.menu ul li{
+	
+}
 .about div button{
 	background-color: #635dda;
 	padding: 8px 10px 8px 10px;
@@ -145,6 +167,13 @@ margin-bottom: 30px;
 	border: 1px solid #635dda;
 	font-size: 1.1em;
 	margin-top: 10px;
+	cursor: pointer;
+}
+button{
+	box-shadow: 0 0 5px #635dda,0 0 25px #635dda;
+}
+button:hover {
+	box-shadow: 0 0 5px #635dda,0 0 25px #635dda,0 0 50px #635dda,0 0 100px #635dda,0 0 200px #635dda;
 }
 .about div p{
 	margin-top: 10px;
